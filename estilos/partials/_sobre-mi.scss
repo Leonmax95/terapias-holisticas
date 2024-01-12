@@ -1,0 +1,87 @@
+///////*BARRA DE NAVEGACION*///////
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+    .logo {
+        border-radius: 50%;
+        border-color: red;
+
+    }
+
+    h1{
+        font-size: 40px;
+        text-decoration: underline ;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 0px 20px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .active{
+            text-decoration: overline;
+        }
+    }
+
+    a:hover {
+        color: aqua;
+        transform: scale(1.2);
+    }
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+///////*BARRA DE NAVEGACION*///////
+
+//////*TARJETITAS*///////
+
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: pink;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+    height: 1000px;
+}
+
+.tarjetitados {
+    flex: 1.0;
+}
+.tarjetita__titulo{
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,110,225,1) 0%, rgba(202,131,231,1) 57%, rgba(0,212,255,1) 100%);
+    padding-bottom: 10px;
+}
+///////*TARJETITAS*///////
+footer{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}

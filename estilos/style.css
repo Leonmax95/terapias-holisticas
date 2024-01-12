@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.sobre-mi {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: rgb(227, 233, 233);
+  background-image: url(/imagenes/cintia\ lucia\ melussi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.sobre-mi .sobre-mi-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.reiki {
+  background-color: rgb(208, 243, 243);
+}
+.reiki .reiki-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.ubicacion {
+  background-color: rgb(135, 168, 168);
+}
+.ubicacion .ubicacion-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.home-home {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  background-color: rgb(126, 128, 128);
+}
+.home-home .home-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.meditaciones {
+  background-color: rgb(254, 255, 255);
+}
+.meditaciones .meditaciones-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.contacto {
+  background-color: rgb(254, 255, 255);
+}
+.contacto .contacto-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.home > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-home:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+.sobre-mi:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+  color: greenyellow;
+}
+
+.ubicacion:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+.meditaciones:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+.contacto:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+.reiki:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+  background-color: pink;
+}
+nav .logo {
+  border-radius: 50%;
+  border-color: red;
+}
+nav h1 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .active {
+  text-decoration: overline;
+}
+nav a:hover {
+  color: aqua;
+  transform: scale(1.2);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+  background-color: pink;
+}
+nav .logo {
+  border-radius: 50%;
+  border-color: red;
+}
+nav h1 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .active {
+  text-decoration: overline;
+}
+nav a:hover {
+  color: aqua;
+  transform: scale(1.2);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: pink;
+}
+nav .logo {
+  border-radius: 50%;
+  border-color: red;
+}
+nav h1 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .active {
+  text-decoration: overline;
+}
+nav a:hover {
+  color: aqua;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.tarjetitas {
+  padding: 60px;
+  display: flex;
+  gap: 30px;
+}
+
+.tarjetita_reiki {
+  background-color: rgb(106, 211, 252);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.informacion {
+  padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+  max-width: 100%;
+  height: 1000px;
+}
+
+.tarjetitados {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+}
+nav .logo {
+  border-radius: 50%;
+  border-color: red;
+}
+nav h1 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .active {
+  text-decoration: overline;
+}
+nav a:hover {
+  color: aqua;
+  transform: scale(1.2);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.tarjetitas {
+  padding: 60px;
+  display: flex;
+  gap: 30px;
+}
+
+.tarjetita {
+  background-color: pink;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.informacion {
+  padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+  max-width: 100%;
+  height: 1000px;
+}
+
+.tarjetitados {
+  flex: 1;
+}
+
+.tarjetita__titulo {
+  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(255, 110, 225) 0%, rgb(202, 131, 231) 57%, rgb(0, 212, 255) 100%);
+  padding-bottom: 10px;
+}
+
+footer {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+  background-color: pink;
+}
+nav .logo {
+  border-radius: 50%;
+  border-color: red;
+}
+nav h1 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .active {
+  text-decoration: overline;
+}
+nav a:hover {
+  color: aqua;
+  transform: scale(1.2);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */

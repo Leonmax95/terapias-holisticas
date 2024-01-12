@@ -1,0 +1,44 @@
+///////*BARRA DE NAVEGACION*///////
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: pink;
+
+    .logo {
+        border-radius: 50%;
+        border-color: red;
+
+    }
+
+    h1{
+        font-size: 40px;
+        text-decoration: underline ;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 0px 20px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .active{
+            text-decoration: overline;
+        }
+    }
+
+    a:hover {
+        color: aqua;
+        transform: scale(1.2);
+    }
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+///////*BARRA DE NAVEGACION*///////
