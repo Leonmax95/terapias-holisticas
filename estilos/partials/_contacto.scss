@@ -11,7 +11,7 @@ nav {
 
     .logo {
         border-radius: 50%;
-        border-color: red;
+        margin-left: 5px;
 
     }
 
@@ -42,3 +42,38 @@ nav {
     transform: scale(1.1);
 }
 ///////*BARRA DE NAVEGACION*///////
+
+//////*MAIN*///////
+form{
+    margin-top: 20px;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: pink;
+}
+input,
+textarea{
+    display: block;
+    width: 40%;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.botones{
+background-color: #78d0f8;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 18px;
+cursor: pointer;
+margin-top: 10px;
+}
+.formulario{
+    margin-left: 600px;
+}
+//////*MAIN*///////

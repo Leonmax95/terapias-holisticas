@@ -124,7 +124,7 @@ nav {
 }
 nav .logo {
   border-radius: 50%;
-  border-color: red;
+  margin-left: 5px;
 }
 nav h1 {
   font-size: 40px;
@@ -148,6 +148,43 @@ nav a:hover {
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: pink;
+}
+
+input,
+textarea {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.botones {
+  background-color: #78d0f8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.formulario {
+  margin-left: 600px;
 }
 
 nav {
@@ -162,7 +199,6 @@ nav {
 }
 nav .logo {
   border-radius: 50%;
-  border-color: red;
 }
 nav h1 {
   font-size: 40px;
@@ -186,6 +222,28 @@ nav a:hover {
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+.meditar-texto {
+  display: block;
+  text-align: center;
+}
+.meditar-texto h2, .meditar-texto h3 {
+  background-color: pink;
+  -webkit-text-decoration: underline double;
+          text-decoration: underline double;
+}
+.meditar-texto p {
+  font-size: large;
+}
+.meditar-texto .meditaciones-iframes {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
 }
 
 nav {
@@ -369,4 +427,23 @@ nav a:hover {
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+.areax {
+  margin: 20px;
+  border: 4px solid #333;
+  border-radius: 10px;
+}
+
+.predio {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.area-iframe {
+  display: inline-block;
+  margin: 20px;
+  border: 4px solid #333;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

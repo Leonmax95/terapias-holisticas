@@ -11,7 +11,6 @@ nav {
 
     .logo {
         border-radius: 50%;
-        border-color: red;
 
     }
 
@@ -42,3 +41,30 @@ nav {
     transform: scale(1.1);
 }
 ///////*BARRA DE NAVEGACION*///////
+
+//////*MAIN*//////
+.meditar-texto{
+    display: block;
+    text-align: center;
+
+    h2, h3{
+        background-color: pink;
+        text-decoration: underline double;
+    }
+
+    p{
+        font-size: large;
+    }
+
+    .meditaciones-iframes{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+footer{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+//////*MAIN*//////
