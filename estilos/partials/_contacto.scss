@@ -1,4 +1,4 @@
-///////*BARRA DE NAVEGACION*///////
+/**************NAVBAR***************/
 nav {
     display: flex;
     align-items: center;
@@ -41,12 +41,10 @@ nav {
 .logo:hover{
     transform: scale(1.1);
 }
-///////*BARRA DE NAVEGACION*///////
+/**************NAVBAR***************/
 
-//////*MAIN*///////
-form{
-    margin-top: 20px;
-}
+/**************MAIN***************/
+
 label{
     display: block;
     font-weight: bold;
@@ -64,7 +62,7 @@ textarea{
     margin-bottom: 10px;
 }
 .botones{
-background-color: #78d0f8;
+background-color: #f771eb;
 color: white;
 border: none;
 padding: 10px 20px;
@@ -74,6 +72,14 @@ cursor: pointer;
 margin-top: 10px;
 }
 .formulario{
-    margin-left: 600px;
+    padding-left: 700px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,243,1) 26%, rgba(252,176,69,1) 100%);
+    margin-bottom: -10px;
+    -webkit-animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;
 }
-//////*MAIN*///////
+/**************MAIN***************/
+
+/**********KEYFRAMES***********/
+
+ @-webkit-keyframes puff-in-hor{0%{-webkit-transform:scaleX(2);transform:scaleX(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-hor{0%{-webkit-transform:scaleX(2);transform:scaleX(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}

@@ -1,4 +1,4 @@
-///////*BARRA DE NAVEGACION*///////
+/**************NAVBAR***************/
 nav {
     display: flex;
     align-items: center;
@@ -41,9 +41,12 @@ nav {
 .logo:hover{
     transform: scale(1.1);
 }
-///////*BARRA DE NAVEGACION*///////
+/**************NAVBAR***************/
 
-//////*MAIN*///////
+/*********************MAIN********************/
+h1{
+    text-align: center;
+}
 
 .areax{
     margin: 20px;
@@ -59,8 +62,14 @@ nav {
 }
 .area-iframe{
     display: inline-block;
+    flex-direction: row;
     margin: 20px;
     border: 4px solid #333;
     border-radius: 10px;
+    -webkit-animation:tilt-in-left-1 .6s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-left-1 .6s cubic-bezier(.25,.46,.45,.94) both;
 }
-//////*MAIN*///////
+/*********************MAIN********************/
+
+//*************KEYFRAMES**************//
+
+ @-webkit-keyframes tilt-in-left-1{0%{-webkit-transform:rotateX(-30deg) translateX(-300px) skewX(-30deg);transform:rotateX(-30deg) translateX(-300px) skewX(-30deg);opacity:0}100%{-webkit-transform:rotateX(0deg) translateX(0) skewX(0deg);transform:rotateX(0deg) translateX(0) skewX(0deg);opacity:1}}@keyframes tilt-in-left-1{0%{-webkit-transform:rotateX(-30deg) translateX(-300px) skewX(-30deg);transform:rotateX(-30deg) translateX(-300px) skewX(-30deg);opacity:0}100%{-webkit-transform:rotateX(0deg) translateX(0) skewX(0deg);transform:rotateX(0deg) translateX(0) skewX(0deg);opacity:1}}
