@@ -528,6 +528,12 @@ nav a:hover {
   max-width: 100%;
   height: 900px;
 }
+@media screen and (max-width: 576px) {
+  .tarjetita__imagen {
+    max-width: 100%;
+    height: 600px;
+  }
+}
 
 .tarjetitauno {
   animation: swing-in-left-fwd 1.3s;
