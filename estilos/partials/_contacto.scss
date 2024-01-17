@@ -73,10 +73,15 @@ margin-top: 10px;
 }
 .formulario{
     padding-left: 700px;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,243,1) 26%, rgba(252,176,69,1) 100%);
+    background: rgb(250,98,164);
+background: linear-gradient(90deg, rgba(250,98,164,1) 0%, rgba(250,98,164,1) 12%, rgba(148,187,233,1) 91%);
     margin-bottom: -10px;
     -webkit-animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;
+
+    @include tablet{
+        padding-left: 500px;
+        justify-content: center;
+    }
 }
 /**************MAIN***************/
 
