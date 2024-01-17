@@ -13,6 +13,7 @@ nav {
 
     @include tablet {
         text-align: center;
+        gap: 20px;
     }
 
     @include mobile {

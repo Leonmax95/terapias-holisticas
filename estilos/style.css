@@ -319,6 +319,12 @@ nav a:hover {
   grid-auto-rows: auto;
   gap: 40px;
 }
+@media screen and (max-width: 768px) {
+  .meditaciones-iframes {
+    grid-template-columns: auto;
+    margin: 50px;
+  }
+}
 .meditaciones-iframes .iframe3 {
   display: flex;
   flex-direction: column;
@@ -328,6 +334,13 @@ nav a:hover {
   width: 100%;
   height: 500px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+@media screen and (max-width: 576px) {
+  .iframe-container iframe {
+    width: 100%;
+    height: 250px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  }
 }
 
 footer {
@@ -435,6 +448,16 @@ nav a:hover {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 576px) {
+  .tarjetitas {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tarjetitas {
+    flex-direction: column;
+  }
+}
 
 .tarjetita_reiki {
   background-color: rgb(106, 211, 252);
@@ -475,6 +498,7 @@ nav {
 @media screen and (max-width: 768px) {
   nav {
     text-align: center;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 576px) {
