@@ -5,79 +5,129 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
 
+    @include tablet{
+        width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr
+    }
+
+     @include mobile{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr)
+    }
+
+}
+
+
+//////*PAGINA GRID*//////
+.sobre-mi {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #b3dee2;
+    @include mobile{
+        grid-row: 2/3;
+    }
+
+    .sobre-mi-link {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+}
+}
+.reiki {
+    background-color: #e27396;
+    grid-column: 1/2;
+    grid-row: 2/3;
     
-    }
-
-    //////*PAGINA GRID*//////
-    .sobre-mi {
+    @include tablet{
         grid-column: 1/3;
-        grid-row: 1/2;
-        background-color: #b3dee2;
-        
-        .sobre-mi-link {
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-        }
+    }
+    @include mobile{
+        grid-row: 4/5;
+    }
+    
+
+
+    .reiki-link {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+}
+
+.ubicacion {
+    background-color: #efcfe3;
+    @include tablet{
+        grid-column: 1/3;
+    }
+    @include mobile{
+        grid-row: 3/4;
+    }
+
+    .ubicacion-link {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+}
+
+.home-home {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-color: #eaf2d7;
+    @include mobile{
+        grid-column: 1/3;
     }
 
 
-    .reiki {
-        background-color: #e27396;
-
-
-        .reiki-link {
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-        }
+    .home-link {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
     }
+}
 
-    .ubicacion {
-        background-color: #efcfe3;
-
-        .ubicacion-link {
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-        }
-    }
-
-    .home-home {
+.meditaciones {
+    background-color: #ea9ab2;
+    @include tablet{
         grid-column: 3/5;
-        grid-row: 1/2;
-        background-color: #eaf2d7;
-
-
-        .home-link {
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-        }
+    }
+    @include mobile{
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 
-    .meditaciones {
-        background-color: #ea9ab2;
 
 
+    .meditaciones-link {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+}
 
-        .meditaciones-link {
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-        }
+.contacto {
+    background-color: #c7a2b9;
+    @include tablet{
+        grid-column: 3/5;
+    }
+    @include mobile{
+        grid-column: 1/2;
+        grid-row: 6/7;
     }
 
-    .contacto {
-        background-color: #c7a2b9;
 
-
-        .contacto-link {
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-        }
+    .contacto-link {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
     }
+}
 
     //////*PAGINA GRID*//////
 

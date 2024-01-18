@@ -1,4 +1,5 @@
 /**************NAVBAR***************/
+//*jkasdlkjads*//
 nav {
     display: flex;
     align-items: center;
@@ -72,16 +73,17 @@ cursor: pointer;
 margin-top: 10px;
 }
 .formulario{
-    padding-left: 700px;
     background: rgb(250,98,164);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 4rem !important;
 background: linear-gradient(90deg, rgba(250,98,164,1) 0%, rgba(250,98,164,1) 12%, rgba(148,187,233,1) 91%);
     margin-bottom: -10px;
     -webkit-animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;
 
-    @include tablet{
-        padding-left: 500px;
-        justify-content: center;
-    }
 }
 /**************MAIN***************/
 

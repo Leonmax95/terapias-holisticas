@@ -9,3 +9,98 @@
         @content;
     }
 }
+
+
+@media (min-width: 992px) {
+    .footer-lr {
+        display: none;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1400px) {
+    .footer-lr {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-lr {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-lr {
+        display:none;
+        }
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+
+
+    .footer-lr {
+    display:flex;
+    }
+
+    .footer-hr {
+        display: none;
+    }
+    .redes-sh {
+        display:flex;
+    }
+    .col1-topleft {
+        position: absolute;
+        top: 0;
+        left: 1px;
+
+    }
+    .col1-topright {
+        position: absolute;
+        top: 0;
+        
+    }
+
+    .row {
+        display:grid;
+    }
+
+    .col {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .col2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    .fila-1 {
+        display:flex;
+    }
+
+    .memin {
+        width: 50%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .memin2 {
+        margin-top: 1rem;
+    }
+    
+    .mmng {
+        margin-bottom: 5px;
+    }
+
+    .linkss, .cursos1 {
+        margin-top: 15px;
+    }
+
+    .text12 {
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+}
