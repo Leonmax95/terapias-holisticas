@@ -1,79 +1,4 @@
 @import url("https://fonts.googleapis.com/css2? family= Abril+Fatface & display=swap");
-@media (min-width: 992px) {
-  .footer-lr {
-    display: none;
-    z-index: 1;
-  }
-}
-@media (min-width: 1400px) {
-  .footer-lr {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .footer-lr {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .footer-lr {
-    display: none;
-  }
-}
-@media (min-width: 420px) and (max-width: 767px) {
-  .footer-lr {
-    display: flex;
-  }
-  .footer-hr {
-    display: none;
-  }
-  .redes-sh {
-    display: flex;
-  }
-  .col1-topleft {
-    position: absolute;
-    top: 0;
-    left: 1px;
-  }
-  .col1-topright {
-    position: absolute;
-    top: 0;
-  }
-  .row {
-    display: grid;
-  }
-  .col {
-    display: flex;
-    justify-content: space-around;
-  }
-  .col2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-decoration: none;
-  }
-  .fila-1 {
-    display: flex;
-  }
-  .memin {
-    width: 50%;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .memin2 {
-    margin-top: 1rem;
-  }
-  .mmng {
-    margin-bottom: 5px;
-  }
-  .linkss, .cursos1 {
-    margin-top: 15px;
-  }
-  .text12 {
-    font-size: 14px !important;
-    font-weight: bold;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -120,6 +45,7 @@
 }
 
 /********************flexbox***********************/
+/********PAGINA GRID********/
 .sobre-mi {
   grid-column: 1/3;
   grid-row: 1/2;
@@ -254,35 +180,15 @@
   font-size: 22px;
 }
 
-.home-home:hover {
-  transform: scale(1.1);
-  border-radius: 15px;
-}
-
-.sobre-mi:hover {
-  transform: scale(1.1);
-  border-radius: 15px;
-  color: greenyellow;
-}
-
-.ubicacion:hover {
-  transform: scale(1.1);
-  border-radius: 15px;
-}
-
-.meditaciones:hover {
-  transform: scale(1.1);
-  border-radius: 15px;
-}
-
-.contacto:hover {
-  transform: scale(1.1);
-  border-radius: 15px;
-}
-
-.reiki:hover {
-  transform: scale(1.1);
-  border-radius: 15px;
+.ul-inicio:hover,
+.ul-sobremi:hover,
+.ul-reiki:hover,
+.ul-meditaciones:hover,
+.ul-ubicacion:hover,
+.ul-contacto:hover {
+  transform: scale(0.9);
+  border-color: red;
+  color: aqua;
 }
 @keyframes fade-in-right {
   0% {
@@ -364,9 +270,13 @@ nav ul li a {
 nav ul li .active {
   text-decoration: overline;
 }
-nav a:hover {
+nav .ul-inicio:hover,
+nav .ul-sobremi:hover,
+nav .ul-reiki:hover,
+nav .ul-meditaciones:hover,
+nav .ul-ubicacion:hover,
+nav .ul-contacto:hover:hover {
   color: aqua;
-  transform: scale(1.2);
 }
 
 .logo:hover {
@@ -462,13 +372,13 @@ nav ul li a {
 nav ul li .active {
   text-decoration: overline;
 }
-nav a:hover {
+nav .ul-inicio:hover,
+nav .ul-sobremi:hover,
+nav .ul-reiki:hover,
+nav .ul-meditaciones:hover,
+nav .ul-ubicacion:hover,
+nav .ul-contacto:hover:hover {
   color: aqua;
-  transform: scale(1.2);
-}
-
-.logo:hover {
-  transform: scale(1.1);
 }
 
 .meditacion-h2 {
@@ -500,23 +410,37 @@ nav a:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
   gap: 40px;
-  margin: 50px;
+  margin: 90px;
+  margin-left: 100px;
 }
 @media screen and (max-width: 768px) {
   .meditaciones-iframes {
     grid-template-columns: auto;
-    margin: 50px;
+    margin: 80px;
+    gap: 70px;
   }
 }
-.meditaciones-iframes .iframe3 {
+.meditaciones-iframes .iframe1,
+.meditaciones-iframes .iframe2,
+.meditaciones-iframes .iframe3,
+.meditaciones-iframes .iframe4 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .iframe-container iframe {
-  width: 100%;
-  height: 500px;
+  width: 70%;
+  height: 400px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+@media screen and (max-width: 768px) {
+  .iframe-container iframe {
+    width: 100%;
+    height: 450px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  }
 }
 @media screen and (max-width: 576px) {
   .iframe-container iframe {
@@ -617,7 +541,12 @@ nav ul li a {
 nav ul li .active {
   text-decoration: overline;
 }
-nav a:hover {
+nav .ul-inicio:hover,
+nav .ul-sobremi:hover,
+nav .ul-reiki:hover,
+nav .ul-meditaciones:hover,
+nav .ul-ubicacion:hover,
+nav .ul-contacto:hover:hover {
   color: aqua;
 }
 
@@ -658,11 +587,15 @@ nav a:hover {
 
 .tarjetita__imagen {
   max-width: 100%;
-  height: 1000px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .tarjetita__imagen {
     height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -709,9 +642,13 @@ nav ul li a {
 nav ul li .active {
   text-decoration: overline;
 }
-nav a:hover {
+nav .ul-inicio:hover,
+nav .ul-sobremi:hover,
+nav .ul-reiki:hover,
+nav .ul-meditaciones:hover,
+nav .ul-ubicacion:hover,
+nav .ul-contacto:hover:hover {
   color: aqua;
-  transform: scale(1.2);
 }
 
 /*********************NAVBAR********************/
@@ -738,12 +675,22 @@ nav a:hover {
 
 .tarjetita__imagen {
   max-width: 100%;
-  height: 900px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .tarjetita__imagen {
+    max-width: 100%;
+    height: 800px;
+  }
 }
 @media screen and (max-width: 576px) {
   .tarjetita__imagen {
     max-width: 100%;
-    height: 600px;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -849,9 +796,13 @@ nav ul li a {
 nav ul li .active {
   text-decoration: overline;
 }
-nav a:hover {
+nav .ul-inicio:hover,
+nav .ul-sobremi:hover,
+nav .ul-reiki:hover,
+nav .ul-meditaciones:hover,
+nav .ul-ubicacion:hover,
+nav .ul-contacto:hover:hover {
   color: aqua;
-  transform: scale(1.2);
 }
 
 .logo:hover {
@@ -860,14 +811,27 @@ nav a:hover {
 
 /**************NAVBAR***************/
 /*********************MAIN********************/
-h1 {
+h2 {
   text-align: center;
 }
 
 .areax {
-  margin: 20px;
-  border: 4px solid #333;
-  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 150px, 1fr);
+  gap: 32px;
+  padding: 100px;
+}
+
+div > img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 30px black;
+  transition: 0.3s;
+}
+
+.imggallery:hover {
+  transform: scale(0.9);
 }
 
 .predio {

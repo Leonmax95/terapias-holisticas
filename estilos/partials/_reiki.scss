@@ -14,9 +14,9 @@ nav {
 
     }
 
-    h1{
+    h1 {
         font-size: 40px;
-        text-decoration: underline ;
+        text-decoration: underline;
     }
 
     ul li {
@@ -27,29 +27,38 @@ nav {
             text-decoration: none;
             color: black;
         }
-        .active{
+
+        .active {
             text-decoration: overline;
         }
     }
 
-    a:hover {
+    .ul-inicio:hover,
+    .ul-sobremi:hover,
+    .ul-reiki:hover,
+    .ul-meditaciones:hover,
+    .ul-ubicacion:hover,
+    .ul-contacto:hover:hover {
         color: aqua;
+
     }
 }
-.logo:hover{
+
+.logo:hover {
     transform: scale(1.1);
 }
+
 /********************NAVBAR********************/
 .tarjetitas {
     padding: 60px;
     display: flex;
     gap: 30px;
 
-    @include mobile{
+    @include mobile {
         flex-direction: column;
     }
 
-    @include tablet{
+    @include tablet {
         flex-direction: column;
     }
 }
@@ -70,10 +79,12 @@ nav {
 
 .tarjetita__imagen {
     max-width: 100%;
-    height: 1000px;
+    height: 100px;
+    object-fit: cover;
 
-    @include tablet{
+    @include tablet {
         height: 400px;
+        object-fit: cover;
     }
 
 }

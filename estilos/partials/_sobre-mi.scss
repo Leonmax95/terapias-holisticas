@@ -41,10 +41,15 @@ nav {
         }
     }
 
-    a:hover {
-        color: aqua;
-        transform: scale(1.2);
-    }
+    .ul-inicio:hover,
+    .ul-sobremi:hover,
+    .ul-reiki:hover,
+    .ul-meditaciones:hover,
+    .ul-ubicacion:hover,
+    .ul-contacto:hover:hover {
+            color: aqua;
+            
+        }
 
 }
     /*********************NAVBAR********************/
@@ -75,11 +80,19 @@ nav {
 
     .tarjetita__imagen {
         max-width: 100%;
-        height: 900px;
+        height: 800px;
+        object-fit: cover;
+
+        @include tablet{
+            max-width: 100%;
+            height: 800px;
+            
+        }
 
         @include mobile{
             max-width: 100%;
-            height: 600px;
+            height: 500px;
+            object-fit: cover;
         }
     }
 

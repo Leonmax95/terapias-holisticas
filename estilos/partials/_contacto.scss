@@ -16,9 +16,9 @@ nav {
 
     }
 
-    h1{
+    h1 {
         font-size: 40px;
-        text-decoration: underline ;
+        text-decoration: underline;
     }
 
     ul li {
@@ -29,31 +29,40 @@ nav {
             text-decoration: none;
             color: black;
         }
-        .active{
+
+        .active {
             text-decoration: overline;
         }
     }
 
-    a:hover {
+    .ul-inicio:hover,
+    .ul-sobremi:hover,
+    .ul-reiki:hover,
+    .ul-meditaciones:hover,
+    .ul-ubicacion:hover,
+    .ul-contacto:hover:hover {
         color: aqua;
-        transform: scale(1.2);
+
     }
 }
-.logo:hover{
+
+.logo:hover {
     transform: scale(1.1);
 }
+
 /**************NAVBAR***************/
 
 /**************MAIN***************/
 
-label{
+label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
     color: pink;
 }
+
 input,
-textarea{
+textarea {
     display: block;
     width: 40%;
     padding: 10px;
@@ -62,31 +71,69 @@ textarea{
     font-size: 1rem;
     margin-bottom: 10px;
 }
-.botones{
-background-color: #f771eb;
-color: white;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-font-size: 18px;
-cursor: pointer;
-margin-top: 10px;
+
+.botones {
+    background-color: #f771eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
 }
-.formulario{
-    background: rgb(250,98,164);
-    display:flex;
+
+.formulario {
+    background: rgb(250, 98, 164);
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
     padding-bottom: 4rem !important;
-background: linear-gradient(90deg, rgba(250,98,164,1) 0%, rgba(250,98,164,1) 12%, rgba(148,187,233,1) 91%);
+    background: linear-gradient(90deg, rgba(250, 98, 164, 1) 0%, rgba(250, 98, 164, 1) 12%, rgba(148, 187, 233, 1) 91%);
     margin-bottom: -10px;
-    -webkit-animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-hor .7s cubic-bezier(.47,0.000,.745,.715) both;
+    -webkit-animation: puff-in-hor .7s cubic-bezier(.47, 0.000, .745, .715) both;
+    animation: puff-in-hor .7s cubic-bezier(.47, 0.000, .745, .715) both;
 
 }
+
 /**************MAIN***************/
 
 /**********KEYFRAMES***********/
 
- @-webkit-keyframes puff-in-hor{0%{-webkit-transform:scaleX(2);transform:scaleX(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-hor{0%{-webkit-transform:scaleX(2);transform:scaleX(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes puff-in-hor {
+    0% {
+        -webkit-transform: scaleX(2);
+        transform: scaleX(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes puff-in-hor {
+    0% {
+        -webkit-transform: scaleX(2);
+        transform: scaleX(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
