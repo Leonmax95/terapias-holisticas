@@ -43,6 +43,8 @@
     grid-row: 1/2;
     background-color: #b3dee2;
     
+
+    
     @include mobile{
         grid-row: 2/3;
     }
@@ -326,4 +328,6 @@
             transform: translateX(0) translateY(0);
             opacity: 1
         }
+
+        
     }
